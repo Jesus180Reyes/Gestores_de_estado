@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:singleton_app/pages/details_page.dart';
 import 'package:singleton_app/pages/home_page.dart';
 
 void main() => runApp(const MyApp());
@@ -13,6 +14,7 @@ class MyApp extends StatelessWidget {
       initialRoute: 'home',
       routes: {
         'home': (context) => const HomePage(),
+        '/': (context) => const DetailsPage(),
       },
     );
   }
